@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], input[type=password]{
+
+width:100%;
+padding:12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box_sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Application Portal</title>
+</head>
+<body>
+<form action="Signup1" name="frm" method="post" enctype="multipart/form-data">
+<div class="container">
+<label><b>Enter your name: </b></label>
+<input type="text" placeholder="Enter name:" name="uname" required>
+<label><b>Email</b></label>
+<input type="text" placeholder="Enter Email:" name="uemail" required>
+<label><b>Password</b></label>
+<input type="password" placeholder="Enter password:" name="upass" required>
+<label><b>Repeat Password:</b></label>
+<input type="password" placeholder="Repeat password" name="rpass" required>
+<label><b>Applying for:</b></label>
+<Select name="upost">
+<option value="technical">Technical Section</option>
+<option value="mangement">Management Section</option>
+<option value="clerical">Clerical Section</option>
+</Select><br>
+<label><b>Experience:</b></label>
+<Select name="exp">
+<option value="0">Fresher</option>
+<option value="2-5">2-5 yrs</option>
+<option value="5-7">5-7 yrs</option>
+</Select>
+<label><b>Insert your photo:</b></label>
+<input type="file" placeholder="Insert your photo:" name="photo" required><br>
+<input type="checkbox" checked="checked">Remember me.
+<p>Please ensure th By creating an account you agree to our<a href="#">
+Terms & Privacy</a></p>
+<div class="clearfix">
+<INPUT Type="button" class="cancelbtn" VALUE="Back" onClick="history.go(-1);return true;">
+<button type="submit" class="Singupbtn">Step 1 of 3</button>
+</div>
+</div>
+</form>
+</body>
+</html>

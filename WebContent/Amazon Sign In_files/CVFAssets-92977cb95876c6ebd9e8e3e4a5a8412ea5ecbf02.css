@@ -1,0 +1,15 @@
+.a-js .cvf-widget-section-no-js{display:none}.a-no-js .cvf-widget-section-js{display:none}.a-js .cvf-widget-btn-resend-compact{display:block}.a-js .cvf-widget-btn-resend{display:none}.a-no-js .cvf-widget-btn-resend-compact{display:none}.a-no-js .cvf-widget-btn-resend{display:block}.cvf-link-disabled{pointer-events:none;cursor:default;color:#767676!important}.cvf-hidden{display:none}.cvf-alert-section{margin-bottom:1px!important}.cvf-word-break{word-break:break-all}.cvf-widget-alert-message{height:2.5em}.cvf-widget-input-code-label{font-weight:700}
+
+// We can't attach this rule by class since there are AUI rules
+// that take precedence over class 
+#cvf-resend-code-section, #cvf-skip-code-section  {
+    display: inline;
+}.cvf-widget-container {
+    width: 27em !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* END PACKAGE CVFAssets-1.0.114.0 */
+/* ////////////////////////////////////////// */
+__ESCAPED_SOURCE_END_CLEAN_CSS__
